@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Users {
+
     //Use a linkedset instead?
     private ArrayList<String[]> userList = new ArrayList<>();
 

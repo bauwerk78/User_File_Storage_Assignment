@@ -8,7 +8,7 @@ public interface Statics {
 
 
     static String requestInput(String description) {
-        System.out.println(description);
+        System.out.print(description);
         return scanner.nextLine();
     }
 
