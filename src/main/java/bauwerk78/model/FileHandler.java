@@ -46,14 +46,12 @@ public class FileHandler {
         if (input.equals("..")) {
             tempPath = tempPath.getParent();
             if (checkPath(tempPath) >= 0) {
-                System.out.println(checkPath(tempPath) + " temp path return value");
                 currentPath = tempPath;
                 return currentPath;
             }
         } else {
             tempPath = tempPath.resolve(input);
             if (Files.isDirectory(tempPath) && checkPath(tempPath) >= 0) {
-                System.out.println(checkPath(tempPath) + " temp path return value step 2");
                 currentPath = tempPath;
                 return currentPath;
             }
