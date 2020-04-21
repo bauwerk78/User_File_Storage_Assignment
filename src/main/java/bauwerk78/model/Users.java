@@ -10,7 +10,7 @@ import java.util.List;
 public class Users {
 
     //Use a linkedset instead?
-    private ArrayList<String[]> userList = new ArrayList<>();
+    private final ArrayList<String[]> userList = new ArrayList<>();
 
     public Users() {
         init();
@@ -36,10 +36,11 @@ public class Users {
 
     public String[] getUserLogin(String userName) {
         for (String[] strings : userList) {
-            if(strings[0].contains(userName)) {
+            if(strings[0].equals(userName)) {
                 return strings;
             }
         }
+        System.out.println("returning null");
         return null;
     }
 }

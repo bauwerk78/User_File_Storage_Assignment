@@ -4,10 +4,12 @@ import bauwerk78.tools.Statics;
 
 public class Login implements Statics {
 
+/*
     public Login() {
         getUserLogin();
     }
 
+*/
 
     public String[] getUserLogin() {
         String[] returnValue = new String[2];

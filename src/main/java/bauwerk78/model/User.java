@@ -1,5 +1,8 @@
 package bauwerk78.model;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class User {
 
     private String username;
@@ -12,6 +15,10 @@ public class User {
 
     public String getUser() {
         return username;
+    }
+
+    public Path getHomePath(Path rootPathOfHomeDirectories) {
+        return Paths.get(rootPathOfHomeDirectories + "/" + username + "/");
     }
 
 }
